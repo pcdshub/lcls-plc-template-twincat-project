@@ -1,0 +1,9 @@
+_Boot
+_Libraries
+_CompileInfo
+*.suo
+*~
+*.tpy
+*.bak
+*.~u
+*.swp
