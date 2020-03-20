@@ -12,7 +12,6 @@ matrix:
       python: 3.7
       env: TWINCAT_SUMMARY=1
     - name: Pragma linting
-      python: 3.7
       env: TWINCAT_PRAGMALINT=1
     - name: Documentation building
       env: TWINCAT_BUILD_DOCS=1
