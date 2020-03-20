@@ -15,7 +15,6 @@ matrix:
       python: 3.7
       env: TWINCAT_PRAGMALINT=1
     - name: Documentation building
-      python: 3.7
       env: TWINCAT_BUILD_DOCS=1
 
 install:
@@ -25,4 +24,3 @@ install:
 script:
   # Execute pytmc summarizing, linting, and documentation building
   - source pcds-ci-helpers/travis/init.sh
-
