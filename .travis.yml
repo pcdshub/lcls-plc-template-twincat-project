@@ -1,0 +1,28 @@
+language: python
+python: 3.7
+sudo: false
+
+env:
+  global:
+    - secure: "<ADD DOCTR DEPLOY KEY HERE>"
+
+matrix:
+  include:
+    - name: Project summary
+      python: 3.7
+      env: TWINCAT_SUMMARY=1
+    - name: Pragma linting
+      python: 3.7
+      env: TWINCAT_PRAGMALINT=1
+    - name: Documentation building
+      python: 3.7
+      env: TWINCAT_BUILD_DOCS=1
+
+install:
+  # Pull PCDS standard CI scripts 
+  - git clone --depth 1 https://github.com/pcdshub/pcds-ci-helpers.git
+
+script:
+  # Execute pytmc summarizing, linting, and documentation building
+  - source pcds-ci-helpers/travis/init.sh
+
