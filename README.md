@@ -10,4 +10,4 @@ https://confluence.slac.stanford.edu/display/PCDS/TwinCAT+3+Git+Setup+and+Best+P
 When starting a new project
 ---------------------------
  - [ ] Customize this Readme.md to match your own project.
- - [ ] Configure doctr and add the deploy key to the .travis.yml file for auto-generated documentation (optional).
+ - [ ] (optional) Configure [doctr](https://pypi.org/project/doctr/) and add the deploy key to the .travis.yml file for auto-generated documentation. For instructions on configuring doctr: https://github.com/drdoctr/doctr#run-doctr-configure.
