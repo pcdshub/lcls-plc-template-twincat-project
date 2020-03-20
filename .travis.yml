@@ -9,7 +9,6 @@ env:
 matrix:
   include:
     - name: Project summary
-      python: 3.7
       env: TWINCAT_SUMMARY=1
     - name: Pragma linting
       env: TWINCAT_PRAGMALINT=1
