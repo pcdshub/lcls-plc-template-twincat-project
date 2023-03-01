@@ -8,5 +8,16 @@ https://confluence.slac.stanford.edu/display/PCDS/TwinCAT+3+Git+Setup+and+Best+P
 
 ## When starting a new project
 
- - [ ] Customize this Readme.md to match your own project.
- - [ ] (optional) Configure [doctr](https://pypi.org/project/doctr/) and add the deploy key to the .travis.yml file for auto-generated documentation. Doctr is a python utility for automatically pushing a gh-pages branch through the travis build process. A repository requires some 1st time configuration using the `doctr` command line tool but once that is complete, the pushing process is fully automated. For instructions on configuring doctr: https://github.com/drdoctr/doctr#run-doctr-configure. The doctr command line tool can be found in the [PCDS conda environment](https://github.com/pcdshub/pcds-envs).
+ - [ ] Name your repository appropriately (see below)
+ - [ ] Customize this ``README.md`` to match your own project.
+ - [ ] Create an Environment on GitHub called ``gh-pages`` for documentation deployment. 
+
+Settings -> Environments -> New Environment -> name it "gh-pages" -> "Configure environment" -> "Save protection rules".
+
+### Naming
+
+Libraries should be named: ``lcls-twincat-(function)``. Examples: ``lcls-twincat-general``, ``lcls-twincat-motion``
+PLC projects should be named: ``lcls-plc-(area)-(function)``. Examples: ``lcls-plc-kfe-motion``, ``lcls-plc-las-bts``
+Development or testing-focused PLC projects should be named: ``lcls-plc-test-(area)-(function)`` or ``lcls-plc-test-(name)``. Examples: ``lcls-plc-test-arbiter``, acceptance testing: ``lcls-plc-test-sat-m1l1``, ``lcls-plc-test-pmps``
+Template PLC projects should be named: ``lcls-plc-template-(name)``.
+Example PLC projects should be named: ``lcls-plc-example-(name)``.
