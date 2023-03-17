@@ -6,6 +6,9 @@ can be used as a template.
 For more documentation on integrating TwinCAT3 and git, please see our confluence page:
 https://confluence.slac.stanford.edu/display/PCDS/TwinCAT+3+Git+Setup+and+Best+Practices
 
+For all of our TwinCAT standards and style recommendations, please see this confluence page:
+https://confluence.slac.stanford.edu/display/PCDS/ECS+TwinCAT+Standards+and+Style+Guide
+
 ## When starting a new project
 
  - [ ] Name your repository appropriately (see below)
