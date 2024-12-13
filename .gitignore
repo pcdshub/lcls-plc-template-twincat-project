@@ -10,6 +10,7 @@ _CompileInfo
 *.sw[op]
 *.tmcRefac
 *.tpy
+*.vsm
 *.~u
 *~
 .pytmc_build
